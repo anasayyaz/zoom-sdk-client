@@ -1,0 +1,64 @@
+/* Fullscreen container with gradient background */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    background: linear-gradient(to bottom right, #00c6ff, #0072ff, #00ff95);
+    /* Gradient colors: Blue to green */
+  }
+  
+  .left, .right {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .left h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .left button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0072ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .left button:hover {
+    background-color: #00c6ff;
+  }
+  
+  .right {
+    flex: 2;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+  
